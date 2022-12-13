@@ -13,6 +13,8 @@ spring:
         processEvents-out-0:
           destination: processed-events
       kafka:
+        binder:
+          enableObservation: true
         bindings:
           event-out-0:
             producer:

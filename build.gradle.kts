@@ -14,9 +14,10 @@ java.sourceCompatibility = JavaVersion.VERSION_17
 repositories {
     mavenCentral()
     maven { url = uri("https://repo.spring.io/milestone") }
+    maven { url = uri("https://repo.spring.io/snapshot") }
 }
 
-extra["springCloudVersion"] = "2022.0.0-RC3"
+extra["springCloudVersion"] = "2022.0.0-SNAPSHOT"
 
 dependencies {
     implementation("org.apache.kafka:kafka-streams")
